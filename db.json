@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Olay Moisturizing Creams",
+      "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2020/5/17/a8ba6bb6-cdfb-47de-9084-a2c4cb801442.jpg",
+      "skinType": ["Normal", "Dry", "Combination"],
+      "ageGroup": ["20s", "30s"],
+      "price": 100
+    },
+    {
+      "id": 2,
+      "name": "Wardah Skin Serum",
+      "image": "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2023/11/26/46f6c966-64a1-4441-920a-280c9c877f05.jpg.webp?ect=4g",
+      "skinType": ["Dry", "Combination", "Sensitive", "Mature"],
+      "ageGroup": ["30s", "40s", "50s"],
+      "price": 200
+    },
+    {
+      "id": 3,
+      "name": "Emina Beauty Bliss",
+      "image": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//catalog-image/93/MTA-101905714/no-brand_emina-beauty-bliss-bb-cream_full01.jpg",
+      "skinType": ["Dry", "Combination", "Sensitive"],
+      "ageGroup": ["30s", "40s"],
+      "price": 300
+    }
+  ]
+}
