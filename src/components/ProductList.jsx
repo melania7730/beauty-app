@@ -6,11 +6,10 @@ import axios from "axios";
 const ProductList = ({ preferences }) => {
   const [data, setData] = useState([]);
   useEffect(() => {
-    axios
-      .get("https://beauty-products-alpha.vercel.app/api/products")
-      .then((response) => {
-        setData(response.data);
-      });
+    console.log(import.meta.env);
+    axios.get(import.meta.env.VITE_API_URL).then((response) => {
+      setData(response.data);
+    });
   }, []);
 
   return (
