@@ -4,7 +4,11 @@
       "id": 1,
       "name": "Olay Moisturizing Creams",
       "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2020/5/17/a8ba6bb6-cdfb-47de-9084-a2c4cb801442.jpg",
-      "skinType": ["Normal", "Dry", "Combination"],
+      "skinType": [
+        { "id": "A", "name": "Normal" },
+        { "id": "B", "name": "Dry" },
+        { "id": "C", "name": "Combination" }
+      ],
       "ageGroup": ["20s", "30s"],
       "price": 100
     },
