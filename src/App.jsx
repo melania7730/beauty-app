@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import ProductList from "./components/ProductList";
 import "./App.css";
+import axios from "axios";
 
 const App = () => {
   const [selectedSkinTypes, setSelectedSkinTypes] = useState([]);
   const [selectedAgeGroups, setSelectedAgeGroups] = useState([]);
+  const [data, setData] = useState([]);
 
   const skinTypes = [
     "Normal",
@@ -26,7 +28,9 @@ const App = () => {
   };
 
   const getRecommendations = () => {
-    // Implement the logic to get recommendations based on selectedSkinTypes and selectedAgeGroups
+    axios.get(import.meta.env.VITE_API_URL).then((response) => {
+      setData(response.data);
+    });
     console.log("Selected Skin Types:", selectedSkinTypes);
     console.log("Selected Age Groups:", selectedAgeGroups);
   };
@@ -88,7 +92,7 @@ const App = () => {
           Get Recommendation
         </button>
       </div>
-      <ProductList />
+      <ProductList data={data} />
     </div>
   );
 };
